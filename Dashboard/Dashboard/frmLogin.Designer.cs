@@ -35,11 +35,9 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.btnPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -110,11 +108,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(50)))));
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.btnSignUp);
             this.panel2.Controls.Add(this.btnLogin);
-            this.panel2.Controls.Add(this.guna2ToggleSwitch1);
             this.panel2.Controls.Add(this.btnPassword);
             this.panel2.Controls.Add(this.btnUsername);
             this.panel2.Controls.Add(this.guna2CirclePictureBox1);
@@ -125,16 +121,6 @@
             this.panel2.Size = new System.Drawing.Size(337, 531);
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(84, 330);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 16);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Remmember me";
             // 
             // linkLabel1
             // 
@@ -189,23 +175,6 @@
             this.btnLogin.UseTransparentBackground = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // guna2ToggleSwitch1
-            // 
-            this.guna2ToggleSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(1)))), ((int)(((byte)(88)))));
-            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(43, 326);
-            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
-            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(35, 20);
-            this.guna2ToggleSwitch1.TabIndex = 10;
-            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.BorderThickness = 2;
-            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(9)))), ((int)(((byte)(50)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(153)))), ((int)(((byte)(149)))));
-            // 
             // btnPassword
             // 
             this.btnPassword.Animated = true;
@@ -223,11 +192,12 @@
             this.btnPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnPassword.Location = new System.Drawing.Point(43, 268);
             this.btnPassword.Name = "btnPassword";
-            this.btnPassword.PasswordChar = '\0';
+            this.btnPassword.PasswordChar = '●';
             this.btnPassword.PlaceholderText = "Password";
             this.btnPassword.SelectedText = "";
             this.btnPassword.Size = new System.Drawing.Size(230, 36);
             this.btnPassword.TabIndex = 9;
+            this.btnPassword.UseSystemPasswordChar = true;
             // 
             // btnUsername
             // 
@@ -294,13 +264,11 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button btnSignUp;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
         private Guna.UI2.WinForms.Guna2TextBox btnPassword;
         private Guna.UI2.WinForms.Guna2TextBox btnUsername;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.Label label1;
     }
 }
