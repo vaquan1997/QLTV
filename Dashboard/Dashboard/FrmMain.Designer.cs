@@ -32,10 +32,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.btnsettings = new System.Windows.Forms.Button();
-            this.btnContactUs = new System.Windows.Forms.Button();
+            this.btnSetting = new System.Windows.Forms.Button();
             this.btnCalender = new System.Windows.Forms.Button();
-            this.btnAnalytics = new System.Windows.Forms.Button();
-            this.btnDashbord = new System.Windows.Forms.Button();
+            this.btnKeSach = new System.Windows.Forms.Button();
+            this.btnTrangChu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,10 +59,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnsettings);
-            this.panel1.Controls.Add(this.btnContactUs);
+            this.panel1.Controls.Add(this.btnSetting);
             this.panel1.Controls.Add(this.btnCalender);
-            this.panel1.Controls.Add(this.btnAnalytics);
-            this.panel1.Controls.Add(this.btnDashbord);
+            this.panel1.Controls.Add(this.btnKeSach);
+            this.panel1.Controls.Add(this.btnTrangChu);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -94,30 +94,30 @@
             this.btnsettings.Name = "btnsettings";
             this.btnsettings.Size = new System.Drawing.Size(248, 51);
             this.btnsettings.TabIndex = 1;
-            this.btnsettings.Text = "Setting";
+            this.btnsettings.Text = "Log out";
             this.btnsettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnsettings.UseVisualStyleBackColor = true;
             this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
             this.btnsettings.Leave += new System.EventHandler(this.btnsettings_Leave);
             // 
-            // btnContactUs
+            // btnSetting
             // 
-            this.btnContactUs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContactUs.FlatAppearance.BorderSize = 0;
-            this.btnContactUs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContactUs.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContactUs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnContactUs.Image = global::Dashboard.Properties.Resources.Conact;
-            this.btnContactUs.Location = new System.Drawing.Point(0, 346);
-            this.btnContactUs.Margin = new System.Windows.Forms.Padding(4);
-            this.btnContactUs.Name = "btnContactUs";
-            this.btnContactUs.Size = new System.Drawing.Size(248, 52);
-            this.btnContactUs.TabIndex = 1;
-            this.btnContactUs.Text = "Contact Us";
-            this.btnContactUs.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnContactUs.UseVisualStyleBackColor = true;
-            this.btnContactUs.Click += new System.EventHandler(this.btnContactUs_Click);
-            this.btnContactUs.Leave += new System.EventHandler(this.btnContactUs_Leave);
+            this.btnSetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSetting.FlatAppearance.BorderSize = 0;
+            this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSetting.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSetting.Image = global::Dashboard.Properties.Resources.Conact;
+            this.btnSetting.Location = new System.Drawing.Point(0, 346);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSetting.Name = "btnSetting";
+            this.btnSetting.Size = new System.Drawing.Size(248, 52);
+            this.btnSetting.TabIndex = 1;
+            this.btnSetting.Text = "Cài đặt";
+            this.btnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSetting.UseVisualStyleBackColor = true;
+            this.btnSetting.Click += new System.EventHandler(this.btnContactUs_Click);
+            this.btnSetting.Leave += new System.EventHandler(this.btnContactUs_Leave);
             // 
             // btnCalender
             // 
@@ -138,43 +138,43 @@
             this.btnCalender.Click += new System.EventHandler(this.btnCalender_Click);
             this.btnCalender.Leave += new System.EventHandler(this.btnCalender_Leave);
             // 
-            // btnAnalytics
+            // btnKeSach
             // 
-            this.btnAnalytics.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAnalytics.FlatAppearance.BorderSize = 0;
-            this.btnAnalytics.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnalytics.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnalytics.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnAnalytics.Image = global::Dashboard.Properties.Resources.diagram;
-            this.btnAnalytics.Location = new System.Drawing.Point(0, 242);
-            this.btnAnalytics.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAnalytics.Name = "btnAnalytics";
-            this.btnAnalytics.Size = new System.Drawing.Size(248, 52);
-            this.btnAnalytics.TabIndex = 1;
-            this.btnAnalytics.Text = "Analytics";
-            this.btnAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAnalytics.UseVisualStyleBackColor = true;
-            this.btnAnalytics.Click += new System.EventHandler(this.btnAnalytics_Click);
-            this.btnAnalytics.Leave += new System.EventHandler(this.btnAnalytics_Leave);
+            this.btnKeSach.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKeSach.FlatAppearance.BorderSize = 0;
+            this.btnKeSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKeSach.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKeSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnKeSach.Image = global::Dashboard.Properties.Resources.diagram;
+            this.btnKeSach.Location = new System.Drawing.Point(0, 242);
+            this.btnKeSach.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKeSach.Name = "btnKeSach";
+            this.btnKeSach.Size = new System.Drawing.Size(248, 52);
+            this.btnKeSach.TabIndex = 1;
+            this.btnKeSach.Text = "Kệ sách";
+            this.btnKeSach.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnKeSach.UseVisualStyleBackColor = true;
+            this.btnKeSach.Click += new System.EventHandler(this.btnAnalytics_Click);
+            this.btnKeSach.Leave += new System.EventHandler(this.btnAnalytics_Leave);
             // 
-            // btnDashbord
+            // btnTrangChu
             // 
-            this.btnDashbord.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDashbord.FlatAppearance.BorderSize = 0;
-            this.btnDashbord.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDashbord.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashbord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnDashbord.Image = global::Dashboard.Properties.Resources.home;
-            this.btnDashbord.Location = new System.Drawing.Point(0, 190);
-            this.btnDashbord.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDashbord.Name = "btnDashbord";
-            this.btnDashbord.Size = new System.Drawing.Size(248, 52);
-            this.btnDashbord.TabIndex = 1;
-            this.btnDashbord.Text = "Dashboard";
-            this.btnDashbord.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnDashbord.UseVisualStyleBackColor = true;
-            this.btnDashbord.Click += new System.EventHandler(this.btnDashbord_Click);
-            this.btnDashbord.Leave += new System.EventHandler(this.btnDashbord_Leave);
+            this.btnTrangChu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTrangChu.FlatAppearance.BorderSize = 0;
+            this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTrangChu.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTrangChu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnTrangChu.Image = global::Dashboard.Properties.Resources.home;
+            this.btnTrangChu.Location = new System.Drawing.Point(0, 190);
+            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTrangChu.Name = "btnTrangChu";
+            this.btnTrangChu.Size = new System.Drawing.Size(248, 52);
+            this.btnTrangChu.TabIndex = 1;
+            this.btnTrangChu.Text = "Trang chủ";
+            this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnTrangChu.UseVisualStyleBackColor = true;
+            this.btnTrangChu.Click += new System.EventHandler(this.btnDashbord_Click);
+            this.btnTrangChu.Leave += new System.EventHandler(this.btnDashbord_Leave);
             // 
             // panel2
             // 
@@ -341,15 +341,15 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnDashbord;
+        private System.Windows.Forms.Button btnTrangChu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnsettings;
-        private System.Windows.Forms.Button btnContactUs;
+        private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Button btnCalender;
-        private System.Windows.Forms.Button btnAnalytics;
+        private System.Windows.Forms.Button btnKeSach;
         private System.Windows.Forms.Panel pnlNav;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel plParent;

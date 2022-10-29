@@ -25,10 +25,10 @@ namespace Dashboard
         {
             InitializeComponent();
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 25, 25));
-            pnlNav.Height = btnDashbord.Height;
-            pnlNav.Top = btnDashbord.Top;
-            pnlNav.Left = btnDashbord.Left;
-            btnDashbord.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnTrangChu.Height;
+            pnlNav.Top = btnTrangChu.Top;
+            pnlNav.Left = btnTrangChu.Left;
+            btnTrangChu.BackColor = Color.FromArgb(46, 51, 73);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -38,10 +38,10 @@ namespace Dashboard
 
         private void btnDashbord_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnDashbord.Height;
-            pnlNav.Top = btnDashbord.Top;
-            pnlNav.Left = btnDashbord.Left;
-            btnDashbord.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnTrangChu.Height;
+            pnlNav.Top = btnTrangChu.Top;
+            pnlNav.Left = btnTrangChu.Left;
+            btnTrangChu.BackColor = Color.FromArgb(46, 51, 73);
 
             //lbltitle.Text = "Trang chủ";
             //this.plParent.Controls.Clear();
@@ -53,9 +53,9 @@ namespace Dashboard
 
         private void btnAnalytics_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnAnalytics.Height;
-            pnlNav.Top = btnAnalytics.Top;
-            btnAnalytics.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnKeSach.Height;
+            pnlNav.Top = btnKeSach.Top;
+            btnKeSach.BackColor = Color.FromArgb(46, 51, 73);
             lbltitle.Text = "Analytics";
             this.plParent.Controls.Clear();
              frmAnalytics frm = new frmAnalytics() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
@@ -73,9 +73,14 @@ namespace Dashboard
 
         private void btnContactUs_Click(object sender, EventArgs e)
         {
-            pnlNav.Height = btnContactUs.Height;
-            pnlNav.Top = btnContactUs.Top;
-            btnContactUs.BackColor = Color.FromArgb(46, 51, 73);
+            pnlNav.Height = btnSetting.Height;
+            pnlNav.Top = btnSetting.Top;
+            btnSetting.BackColor = Color.FromArgb(46, 51, 73);
+            this.plParent.Controls.Clear();
+            frmSetting frm = new frmSetting() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+
+            this.plParent.Controls.Add(frm);
+            frm.Show();
         }
 
         private void btnsettings_Click(object sender, EventArgs e)
@@ -85,21 +90,19 @@ namespace Dashboard
             btnsettings.BackColor = Color.FromArgb(46, 51, 73);
             lbltitle.Text = "Setting";
             this.plParent.Controls.Clear();
-            frmSetting frm = new frmSetting() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-
-            this.plParent.Controls.Add(frm);
+            frmLogin frm = new frmLogin();
             frm.Show();
-
+            this.Hide();
         }
 
         private void btnDashbord_Leave(object sender, EventArgs e)
         {
-            btnDashbord.BackColor = Color.FromArgb(24, 30, 54);
+            btnTrangChu.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnAnalytics_Leave(object sender, EventArgs e)
         {
-            btnAnalytics.BackColor = Color.FromArgb(24, 30, 54);
+            btnKeSach.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnCalender_Leave(object sender, EventArgs e)
@@ -109,7 +112,7 @@ namespace Dashboard
 
         private void btnContactUs_Leave(object sender, EventArgs e)
         {
-            btnContactUs.BackColor = Color.FromArgb(24, 30, 54);
+            btnSetting.BackColor = Color.FromArgb(24, 30, 54);
         }
 
         private void btnsettings_Leave(object sender, EventArgs e)
@@ -140,6 +143,11 @@ namespace Dashboard
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }
